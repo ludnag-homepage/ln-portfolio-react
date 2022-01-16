@@ -37,9 +37,11 @@ export const Root = () => {
             w="fit-content"
           >
             <Heading lineHeight="5rem" size="4xl">
-              Hei! I am
-              <br />
-              Ludwig
+              Hei!
+              <span style={{ fontSize: "2.5rem", margin: "auto" }}>
+                🇳🇴
+              </span>{" "}
+              <br /> I'm Ludwig
             </Heading>
             <Text m="1rem" mt="2rem" textAlign="left" color="gray.700">
               Welcome to my portfolio! Take a look around, and don't hesitate to
