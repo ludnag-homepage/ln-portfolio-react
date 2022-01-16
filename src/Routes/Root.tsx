@@ -2,16 +2,15 @@ import {
   Box,
   Center,
   chakra,
-  Code,
-  Flex,
   Heading,
+  Image,
   SimpleGrid,
   Stack,
   Text
 } from "@chakra-ui/react";
-import { useEffect, useState } from "react";
-import { MAX_WIDTH_CONTENT } from "../shared/constants";
 import { motion } from "framer-motion";
+import { MAX_WIDTH_CONTENT } from "../shared/constants";
+import ImageLudwig from "./ludwig.png";
 
 /* TODO: rename to just SlideIn?  */
 const FlexSlideIn = chakra(motion.div, {
@@ -48,7 +47,9 @@ export const Root = () => {
             </Text>
           </FlexSlideIn>
         </Center>
-        <Box bg="#ddd"></Box>
+        <Center m="1rem">
+          <Image bg="#ddd" borderRadius="8%" p="1rem" src={ImageLudwig} />
+        </Center>
       </SimpleGrid>
       <SimpleGrid gap="2rem" columns={3} boxSizing="content-box" pb="2rem">
         <Box bg="#ddd" h="14rem" />

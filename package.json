@@ -1,4 +1,5 @@
 {
+  "homepage": "http://gitname.github.io/react-gh-pages",
   "browserslist": {
     "production": [">0.2%", "not dead", "not op_mini all"],
     "development": [
@@ -24,6 +25,7 @@
     "@types/node": "^12.0.0",
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
+    "gh-pages": "^3.2.3",
     "prettier": "^2.4.1"
   },
   "eslintConfig": {
@@ -32,6 +34,8 @@
   "name": "frontend",
   "private": true,
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

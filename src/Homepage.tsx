@@ -69,7 +69,7 @@ const MenuBar = () => {
         maxW={MAX_WIDTH_CONTENT}
         m="auto"
       >
-        <Flex ml="2rem">
+        <Flex>
           <Image h="3rem" src={L} />
           <Image h="3rem" ml="-.5rem" src={N} />
         </Flex>
