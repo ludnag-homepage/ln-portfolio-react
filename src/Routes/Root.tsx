@@ -36,21 +36,24 @@ export const Root = () => {
             flexDir="column"
             w="fit-content"
           >
-            <Heading lineHeight="5rem" size="4xl">
-              Hei!
-              <span style={{ fontSize: "2.5rem", margin: "auto" }}>
-                🇳🇴
-              </span>{" "}
-              <br /> I'm Ludwig
+            <Heading fontWeight="bold" lineHeight="5rem" size="4xl">
+              Hei! I'm
+              <br /> Ludwig🇳🇴
             </Heading>
-            <Text m="1rem" mt="2rem" textAlign="left" color="gray.700">
+            <Text fontSize="1.4rem" mt="2rem" textAlign="left" color="gray.700">
               Welcome to my portfolio! Take a look around, and don't hesitate to
               reach out if you like what you see.
             </Text>
           </FlexSlideIn>
         </Center>
         <Center m="1rem">
-          <Image bg="#ddd" borderRadius="8%" p="1rem" src={ImageLudwig} />
+          <Image
+            bg="#ddd"
+            borderRadius="8%"
+            boxShadow="md"
+            p=".6rem"
+            src={ImageLudwig}
+          />
         </Center>
       </SimpleGrid>
       <SimpleGrid gap="2rem" columns={3} boxSizing="content-box" pb="2rem">
